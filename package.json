@@ -1,0 +1,22 @@
+{
+  "name": "black-octo-dwagon",
+  "version": "0.0.1",
+  "description": "Masspay file generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jekku/black-octo-dwagon.git"
+  },
+  "author": "Jekri Preclaro Orlina <jekri.orlina@any.tv> (http://github.com/jekku)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jekku/black-octo-dwagon/issues"
+  },
+  "homepage": "https://github.com/jekku/black-octo-dwagon#readme",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
