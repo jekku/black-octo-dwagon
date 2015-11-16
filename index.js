@@ -3,7 +3,7 @@
 const fs = require('fs');
 const _  = require('lodash');
 const max_entries = process.argv[2] || 2000;
-const max_cash    = +process.argv[3] || 2.0;
+const max_cash    = parseFloat(process.argv[3]) || 2.0;
 
 let accounts = [];
 let pay_data = new Array(+max_entries);
