@@ -51,8 +51,11 @@ let generate_mass_pay_data = () => {
 
 
 let write_mass_pay_data = () => {
-    console.log(pay_data);
-    //write out here :)
+    fs.truncateSync('masspay.csv', '');
+    _(pay_data).forEach( data => {
+        let line = `${data.email},${data.amount},USD\n`;
+        fs.appendFileSync('masspay.csv', line);
+    }).commit();
 };
 
 read_accounts_file().then(add_accounts)
